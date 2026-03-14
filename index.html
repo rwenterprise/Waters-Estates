@@ -3,109 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>We Buy Real Estate | Waters Estates</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        .glass-card { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
-        .sticky-nav { position: sticky; top: 0; z-index: 50; }
-    </style>
+    <title>Waters Estates | Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
 </head>
-<body class="bg-slate-50 text-slate-900 font-sans">
-
-   <nav class="sticky top-0 z-50 bg-white border-b px-6 py-4 shadow-sm">
-    <div class="flex justify-between items-center max-w-7xl mx-auto">
-        <div class="flex items-center gap-3">
-            <img src="images/logo.png" alt="W" class="h-10 w-auto">
-            <span class="font-bold text-xl uppercase tracking-tighter text-slate-900">Waters Estates</span>
+<body>
+    <nav>
+        <div class="container nav-flex">
+            <a href="index.html" class="brand-text">WATERS ESTATES</a>
+            <ul class="nav-links">
+                <li><a href="residential.html">Residential</a></li>
+                <li><a href="multifamily.html">Multifamily</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </div>
+    </nav>
 
-        <div class="hidden md:flex space-x-8 text-sm font-bold uppercase tracking-widest text-slate-500">
-            <a href="index.html" class="hover:text-blue-700 transition">Home</a>
-            <a href="residential.html" class="hover:text-blue-700 transition">Residential</a>
-            <a href="multifamily.html" class="hover:text-blue-700 transition">Multifamily</a>
-            <a href="contact.html" class="text-blue-700">Contact</a>
-        </div>
-
-        <button onclick="toggleMenu()" class="md:hidden text-slate-900 focus:outline-none">
-            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-            </svg>
-        </button>
-    </div>
-
-    <div id="mobile-menu" class="hidden md:hidden pt-4 pb-2 space-y-4">
-        <a href="index.html" class="block font-bold uppercase text-sm text-slate-600 hover:text-blue-700">Home</a>
-        <a href="residential.html" class="block font-bold uppercase text-sm text-slate-600 hover:text-blue-700">Residential</a>
-        <a href="multifamily.html" class="block font-bold uppercase text-sm text-slate-600 hover:text-blue-700">Multifamily</a>
-        <a href="contact.html" class="block font-bold uppercase text-sm text-blue-700">Contact</a>
-    </div>
-</nav>
-
-<script>
-    function toggleMenu() {
-        const menu = document.getElementById('mobile-menu');
-        menu.classList.toggle('hidden');
-    }
-</script>
-
-    <header class="bg-slate-900 text-white py-20 px-6">
-        <div class="max-w-5xl mx-auto text-center">
-            <h1 class="text-5xl md:text-7xl font-black mb-6 tracking-tight">We Buy Real Estate</h1>
-            <p class="text-xl text-slate-300 mb-12 max-w-2xl mx-auto">Providing professional, transparent, and flexible solutions for property owners.</p>
-            
-            <div class="glass-card p-8 rounded-3xl flex flex-col md:flex-row items-center gap-8 text-left max-w-4xl mx-auto">
-                <div class="w-32 h-32 rounded-full overflow-hidden border-4 border-blue-500 flex-shrink-0">
-                    <img src="images/headshot.jpg" alt="Reece Waters" class="w-full h-full object-cover">
-                </div>
-                <div>
-                    <h2 class="text-2xl font-bold">Reece Waters</h2>
-                    <p class="text-blue-400 font-bold text-xs uppercase tracking-widest mb-4">President & CEO</p>
-                    <p class="italic text-slate-200 leading-relaxed">"I started Waters Estates to build generational wealth while celebrating the opportunity inherent in every property. I work with owners to provide solutions that ensure well-run property legacies continue."</p>
-                </div>
-            </div>
+    <header class="hero">
+        <div class="container">
+            <h1>WATERS ESTATES</h1>
+            <p>Missouri Real Estate Acquisitions</p>
         </div>
     </header>
 
-    <section class="py-24 px-6 max-w-7xl mx-auto">
-        <div class="text-center mb-16">
-            <h2 class="text-4xl font-black uppercase tracking-tight text-slate-900">Why Sellers Choose Us</h2>
-            <p class="text-slate-500 mt-4 text-lg">Predictable outcomes for homeowners and portfolio managers alike.</p>
-        </div>
-
-        <div class="grid md:grid-cols-2 gap-12">
-            <div class="bg-white p-10 rounded-3xl shadow-xl border border-slate-100">
-                <div class="flex items-center gap-3 mb-6">
-                    <span class="bg-blue-100 text-blue-700 p-3 rounded-xl font-black text-xl">🏡</span>
-                    <h3 class="text-2xl font-bold text-slate-800 uppercase">Residential Benefits</h3>
-                </div>
-                <ul class="space-y-4 text-slate-600">
-                    <li class="flex gap-3"><strong>✔ Immediate Income:</strong> Receive monthly interest payments while we rehab the property.</li>
-                    <li class="flex gap-3"><strong>✔ Sold As-Is:</strong> No repairs, renovation costs, or contractor headaches.</li>
-                    <li class="flex gap-3"><strong>✔ No Showings:</strong> Skip the constant cleaning and strangers walking through your home.</li>
-                    <li class="flex gap-3"><strong>✔ Stress-Free Exit:</strong> A simple, structured plan with a clear 6-month payoff date.</li>
-                </ul>
-                <a href="residential.html" class="mt-8 inline-block text-blue-700 font-bold underline underline-offset-4">View Deal Structure →</a>
+    <section class="section container">
+        <div class="flex-layout">
+            <div class="flex-item-image">
+                <img src="headshot.jpg" alt="Reece Waters" class="headshot">
             </div>
-
-            <div class="bg-slate-900 p-10 rounded-3xl shadow-xl text-white">
-                <div class="flex items-center gap-3 mb-6">
-                    <span class="bg-blue-600 text-white p-3 rounded-xl font-black text-xl">🏢</span>
-                    <h3 class="text-2xl font-bold uppercase">Multifamily Benefits</h3>
+            <div class="flex-item-text">
+                <h2 style="font-size: 2.5rem;">Reece Waters</h2>
+                <p style="color: #007bff; font-weight: 800; text-transform: uppercase; margin-bottom: 20px;">President | CEO</p>
+                <p>My name is Reece Waters with Waters Estates. I'm actively acquiring small multifamily properties across Missouri with a long-term hold strategy.</p>
+                <p style="margin-top: 15px;">I'm focused on building strong, long-term relationships with agents and becoming a consistent, reliable buyer. I aim to be responsive and easy to work with throughout every transaction.</p>
+                <div style="margin-top: 30px;">
+                    <a href="multifamily.html" class="btn">View Buy Box</a>
+                    <a href="contact.html" class="btn" style="background: transparent; color: #000; border: 2px solid #000; margin-left: 10px;">Contact Me</a>
                 </div>
-                <ul class="space-y-4 text-slate-300">
-                    <li class="flex gap-3"><strong class="text-white font-bold">✔ Mailbox Money:</strong> Consistent retirement income stream via predictable cash flow.</li>
-                    <li class="flex gap-3"><strong class="text-white font-bold">✔ Tax Deferral:</strong> Limit tax liability by spreading capital gains over years.</li>
-                    <li class="flex gap-3"><strong class="text-white font-bold">✔ Zero Stress:</strong> Eliminates management burdens, tenants, and maintenance.</li>
-                    <li class="flex gap-3"><strong class="text-white font-bold">✔ Higher Yields:</strong> Returns that often beat CDs, Treasuries, or Bonds.</li>
-                </ul>
-                <a href="multifamily.html" class="mt-8 inline-block text-blue-400 font-bold underline underline-offset-4">Explore Annuity Options →</a>
             </div>
         </div>
     </section>
 
-    <footer class="py-12 text-center text-slate-400 text-xs tracking-[0.2em] border-t">
-        <p>&copy; 2026 WATERS ESTATES LLC | PROFESSIONAL REAL ESTATE ACQUISITIONS</p>
+    <footer>
+        <div class="container">
+            <img src="Waters Estates Logo - on Black.png" alt="Waters Estates" class="footer-logo">
+            <p>(573) 836-4990 | Reece.WatersEstates@gmail.com</p>
+            <p style="margin-top: 20px; font-size: 0.8rem; color: #555;">&copy; 2026 Waters Estates. All Rights Reserved.</p>
+        </div>
     </footer>
-
 </body>
 </html>
